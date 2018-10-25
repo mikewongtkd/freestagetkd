@@ -1,0 +1,12 @@
+#! /usr/bin/perl
+
+use lib qw( /usr/local/freestage/lib );
+use Mojolicious::Lite;
+use Try::Tiny;
+use JSON::XS;
+
+our $json = new JSON::XS();
+
+websocket '/staging' => sub {
+	my $ws = shift;
+};
